@@ -1,0 +1,354 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration-line: none;
+    font-family: Courier New, Courier, monospace;
+}
+
+body {
+    position: relative;
+}
+
+/* Navbar style */
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: #d2527f;
+    overflow: auto;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+nav a.logo {
+    width: 30%;
+    float: left;
+    font-weight: bolder;
+    font-size: 3rem;
+    margin-top: 12px;
+}
+
+nav a.about, nav a.contact {
+    width: 20%;
+    float: right;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 25px;
+}
+
+nav a.about:hover, nav a.contact:hover {
+    border-bottom: 2px solid white;
+}
+
+div.account {
+    width: 100%;
+    overflow: auto;
+}
+
+div.account p {
+    width: 60%;
+    float: left;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #1e8bc3;
+}
+
+div.account a {
+    display: block;
+    width: 20%;
+    float: right;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+div.account a.logout {
+    background-color: #fabe58;
+}
+
+div.account a.create {
+    background-color: #27ae60;
+}
+
+/* Register style */
+div.register form * {
+    display: block;
+}
+
+div.register {
+    width: 35%;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+div.register form {
+    width: 100%;
+    height: 100%;
+    background-color: #1e8bc3;
+    border-radius: 8px;
+}
+
+
+div.register form input {
+    width: 80%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    margin: 15px auto;
+    position: relative;
+    top: 25%;
+    font-size: 1rem;
+}
+
+div.register form input#email:focus {
+    border: 2px solid #fabe58;
+}
+
+div.register form input.submit {
+    top: 30%;
+    background-color: #fabe58;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    border: 1.4px solid white;
+    width: 40%;
+    margin: 0 auto;
+}
+
+/* About style */
+div.about {
+    width: 65%;
+    margin: 50px auto;
+}
+
+div.about h2 {
+    width: 100%;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* Contact style */
+div.contact {
+    width: 65%;
+    margin: 50px auto;
+}
+
+div.contact h2 {
+    width: 100%;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* Categories style */
+div.category {
+    width: 30%;
+    height: auto;
+    float: left;
+    position: relative;
+    left: 4%;
+    margin-top: 120px;
+    margin-left: 1%;
+}
+
+div.category a {
+    display: block;
+}
+
+div.category a.image {
+    display: block;
+    margin: 0 auto;
+}
+
+div.category a img {
+    display: block;
+    width: 85%;
+    height: 85%;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+div.category a.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: #f5ab35;
+    border-radius: 5px;
+    color: white;
+    width: 85%;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* Vote style */
+div.vote {
+    border-radius: 5px;
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 150px;
+    overflow: auto;
+}
+
+div.vote img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+div.vote p.noti {
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+    color: #e74c3c;
+}
+
+div.vote a {
+    border: none;
+    border-radius: 3px;
+    display: block;
+    width: 30%;
+    margin-top: 20px;
+    float: left;
+    position: relative;
+    left: 4%;
+    margin-left: 1%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    transition: width 0.3s ease-in-out;
+}
+
+div.vote a:hover {
+    width: 33%;
+}
+
+div.vote a.not {
+    background-color: #2ecc71;
+}
+
+div.vote a.hot {
+    background-color: #d91e18;
+}
+
+div.vote span {
+    border-radius: 3px;
+    display: block;
+    width: 30%;
+    float: left;
+    margin-top: 24px;
+    position: relative;
+    left: 4%;
+    margin-left: 1%;
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+a.navigate {
+    border-radius: 5px;
+    display: block;
+    width: 15%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    bottom: 180px;
+    color: white;
+    background-color: #f5ab35;
+}
+
+a#next {
+    float: right;
+    right: 10%;
+}
+
+a#prev {
+    float: left;
+    left: 10%;
+}
+
+a.navigate:hover {
+    background-color: #d2527f;
+}
+
+div.nophoto {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #d91e18;
+    color: white;
+    border-radius: 5px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+/* /create style */
+form.create {
+    border: 2px solid #34495e;
+    border-radius: 5px;
+    width: 60%;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+form.create lable {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    float: left;
+    margin-top: 30px;
+    margin-left: 10%;
+}
+
+form.create select {
+    display: block;
+    font-size: 2rem;
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+form.create input.upload {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+form.create input.sub {
+    display: block;
+    width: 30%;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 60px;
+    background-color: #f5ab35;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin-left: 10%;
+}
+
+
+

@@ -1,0 +1,19 @@
+<% include ./head %>
+
+<% if (photos_number > 0) { %>
+<div class='vote'>
+    <img src=<%= source %>>
+    <a href='/hot?category=<%= category %>&photo=<%= photo %>' class='hot'>Hot (<%= hot %>)</a>
+    <span>OR</span>
+    <a href='/not?category=<%= category %>&photo=<%= photo %>' class='not'>Not (<%= not %>)</a>
+</div>
+
+<a href='/categories?category=<%= category %>&photo=<%= photo_next %>' class='navigate' id='next' style=<%= display_next %>>Next</a>
+<a href='/categories?category=<%= category %>&photo=<%= photo_prev %>' class='navigate' id='prev' style=<%= display_prev %>>Prev</a>
+<% } else { %>
+    <div class='nophoto'>
+        This category dont have any photo.
+    </div>
+<% } %>
+
+<% include ./foot %>

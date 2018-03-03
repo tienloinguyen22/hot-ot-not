@@ -1,0 +1,14 @@
+<% include ./head %>
+
+<form class='create' action='/create' method='post' enctype="multipart/form-data">
+    <lable for='cate'>Category:</lable>
+    <select name='category' id='cate'>
+        <option value='category1'>Category 1</option>
+        <option value='category2'>Category 2</option>
+        <option value='category3'>Category 3</option>
+    </select>
+    <input type='file' class='upload' name='fileupload'>
+    <input type='submit' value='Create' class='sub'>
+</form>
+
+<% include ./foot %>
